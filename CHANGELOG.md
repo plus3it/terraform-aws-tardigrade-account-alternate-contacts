@@ -1,4 +1,4 @@
-## repo-template
+## terraform-aws-tardigrade-account-alternate-contacts
 
 All notable changes to this project will be documented in this file.
 
@@ -8,7 +8,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 **Commit Delta**: N/A
 
-**Released**: 2023.01.10
+**Released**: 2023.1.18
 
 **Summary**:
 
