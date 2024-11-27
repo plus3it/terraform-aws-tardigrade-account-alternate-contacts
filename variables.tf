@@ -48,7 +48,7 @@ variable "account_alternate_contacts" {
     condition = alltrue([
       for type in var.account_alternate_contacts :
       length(type.phone_number) >= 1 &&
-      length(type.phone_number) <= 5 &&
+      length(type.phone_number) <= 50 &&
       can(regex("^[\\s0-9()+-]+$", type.phone_number))
     ])
     error_message = "Invalid value for phone number (must be between 1 and 50 characters and correct syntax)"
