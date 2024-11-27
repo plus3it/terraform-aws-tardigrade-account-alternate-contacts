@@ -39,7 +39,7 @@ variable "account_alternate_contacts" {
     condition = alltrue([
       for type in var.account_alternate_contacts :
       length(type.email_address) >= 1 &&
-      length(type.email_address) <= 50 &&
+      length(type.email_address) <= 254 &&
       can(regex("^[\\s]*[\\w+=.#|!&-]+@[\\w.-]+\\.[\\w]+[\\s]*$", type.email_address))
     ])
     error_message = "Invalid value for email address (must be between 1 and 50 characters and correct syntax)"
@@ -48,7 +48,7 @@ variable "account_alternate_contacts" {
     condition = alltrue([
       for type in var.account_alternate_contacts :
       length(type.phone_number) >= 1 &&
-      length(type.phone_number) <= 50 &&
+      length(type.phone_number) <= 25 &&
       can(regex("^[\\s0-9()+-]+$", type.phone_number))
     ])
     error_message = "Invalid value for phone number (must be between 1 and 50 characters and correct syntax)"
