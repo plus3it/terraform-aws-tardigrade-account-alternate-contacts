@@ -21,7 +21,7 @@ No requirements.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_account_alternate_contacts"></a> [account\_alternate\_contacts](#input\_account\_alternate\_contacts) | n/a | <pre>object({<br>    billing = optional(object({<br>      name          = string<br>      title         = string<br>      email_address = string<br>      phone_number  = string<br>    }))<br>    operations = optional(object({<br>      name          = string<br>      title         = string<br>      email_address = string<br>      phone_number  = string<br>    }))<br>    security = optional(object({<br>      name          = string<br>      title         = string<br>      email_address = string<br>      phone_number  = string<br>    }))<br>  })</pre> | n/a | yes |
+| <a name="input_account_alternate_contacts"></a> [account\_alternate\_contacts](#input\_account\_alternate\_contacts) | n/a | <pre>object({<br/>    billing = optional(object({<br/>      name          = string<br/>      title         = string<br/>      email_address = string<br/>      phone_number  = string<br/>    }))<br/>    operations = optional(object({<br/>      name          = string<br/>      title         = string<br/>      email_address = string<br/>      phone_number  = string<br/>    }))<br/>    security = optional(object({<br/>      name          = string<br/>      title         = string<br/>      email_address = string<br/>      phone_number  = string<br/>    }))<br/>  })</pre> | n/a | yes |
 
 ## Outputs
 
